@@ -51,3 +51,8 @@ endif
 if ENABLE_lb_PLUGIN
 SUBDIRS += lb-plugin
 endif
+
+
+if ENABLE_portmirroring_PLUGIN
+SUBDIRS += portmirroring-plugin
+endif
