@@ -264,7 +264,7 @@ l2_output_classify_node_fn (vlib_main_t * vm,
       b0 = vlib_get_buffer (vm, bi0);
       h0 = vlib_buffer_get_current (b0);
 
-      sw_if_index0 = vnet_buffer (b0)->sw_if_index[VLIB_RX];
+      sw_if_index0 = vnet_buffer (b0)->sw_if_index[VLIB_TX];
       vnet_buffer (b0)->l2_classify.table_index = ~0;
 
       /* Select classifier table based on ethertype */
